@@ -1,11 +1,12 @@
 // src/components/Activity.jsx
 import React from 'react';
 import pklImage from '../assets/pkl-ut.jpeg';
-// Import gambar lain jika ada, misalnya:
-// import campusImage from '../assets/kampus.jpg';
-// import eventImage from '../assets/event.jpg';
+import lmtImage from '../assets/act-lmt.jpeg';
+import cctvImage from '../assets/act-instalasicctv.jpeg';
+import futsalImage from '../assets/act-panitiafutsal.jpeg';
+import pekanImage from '../assets/act-pekankomunitas.jpeg';
+import pkkmbImage from '../assets/act-pkkmb.jpeg';
 
-// Data aktivitas (ganti dengan data dan gambar asli Anda)
 const activitiesData = [
   {
     id: 1,
@@ -20,32 +21,32 @@ const activitiesData = [
   },
   {
     id: 2,
-    img: pklImage, // ganti dengan gambar lain
+    img: cctvImage,
     info: {
-      title: "Workshop React.js",
-      desc: "Mempelajari fundamental React dan penggunaan Hooks",
-      tempat: "Kampus PENS",
-      tanggal: "Januari 2025"
+      title: "Instalasi CCTV",
+      desc: "Pemasangan dan konfigurasi sistem CCTV di lapangan",
+      tempat: "Surabaya",
+      tanggal: "2023"
     },
     className: "med"
   },
   {
     id: 3,
-    img: pklImage,
+    img: pkkmbImage,
     info: {
-      title: "Seminar Kecerdasan Buatan",
-      desc: "Pengenalan teknologi AI dan penerapannya untuk mahasiswa",
-      tempat: "Online",
-      tanggal: "Maret 2025"
+      title: "PKKMB",
+      desc: "Pengenalan Kehidupan Kampus bagi Mahasiswa Baru",
+      tempat: "Kampus PENS",
+      tanggal: "2024"
     },
     className: "med"
   },
   {
     id: 4,
-    img: pklImage,
+    img: futsalImage,
     info: {
-      title: "Kegiatan Himpunan Mahasiswa",
-      desc: "Menjadi panitia acara Tech Talk",
+      title: "Panitia Futsal",
+      desc: "Menjadi panitia turnamen futsal kampus",
       tempat: "Kampus",
       tanggal: "2024"
     },
@@ -53,29 +54,18 @@ const activitiesData = [
   },
   {
     id: 5,
-    img: pklImage,
+    img: pekanImage,
     info: {
-      title: "Study Tour ke Bromo",
-      desc: "Perjalanan wisata edukasi bersama teman-teman",
-      tempat: "Probolinggo",
-      tanggal: "Desember 2024"
+      title: "Pekan Komunitas",
+      desc: "Kegiatan pekan komunitas bersama teman-teman",
+      tempat: "Kampus",
+      tanggal: "2024"
     },
     className: "med"
   },
   {
     id: 6,
-    img: pklImage,
-    info: {
-      title: "Momen Kebersamaan",
-      desc: "Foto bersama keluarga dan teman-teman",
-      tempat: "Gedung Serbaguna",
-      tanggal: "2025"
-    },
-    className: "med"
-  },
-    {
-    id: 7,
-    img: pklImage,
+    img: lmtImage,
     info: {
       title: "LKMM-TD 2025",
       desc: "Latihan Keterampilan Manajemen Mahasiswa Tingkat Dasar",
