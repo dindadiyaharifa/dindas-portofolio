@@ -1,9 +1,14 @@
 // src/components/ProjectCard.jsx
 import React from 'react';
 
-const ProjectCard = ({ icon, bgColor, type, name, desc, stack }) => {
+const ProjectCard = ({ icon, bgColor, type, name, desc, stack, link }) => {
+  const CardWrapper = link ? 'a' : 'div';
+  const wrapperProps = link
+    ? { href: link, target: '_blank', rel: 'noopener noreferrer', className: 'project-card reveal project-card-link' }
+    : { className: 'project-card reveal' };
+
   return (
-    <div className="project-card reveal">
+    <CardWrapper {...wrapperProps}>
       <div className="project-thumb" style={{ background: bgColor || '#FFF5B0' }}>
         <span className="icon">{icon}</span>
       </div>
@@ -18,8 +23,13 @@ const ProjectCard = ({ icon, bgColor, type, name, desc, stack }) => {
             </span>
           ))}
         </div>
+        {link && (
+          <div className="project-link-hint">
+            <span>Lihat di GitHub →</span>
+          </div>
+        )}
       </div>
-    </div>
+    </CardWrapper>
   );
 };
 

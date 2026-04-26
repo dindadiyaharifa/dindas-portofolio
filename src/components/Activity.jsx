@@ -11,10 +11,10 @@ const activitiesData = [
     id: 1,
     img: pklImage,
     info: {
-      title: "PKL di PT. Maju Jaya",
-      desc: "Magang IT Support - Menangani jaringan dan hardware",
+      title: "PKL di Accurate Jaya Computer",
+      desc: "Magang sebagai IT Support — menangani jaringan, hardware, dan instalasi CCTV",
       tempat: "Surabaya",
-      tanggal: "Juni - Agustus 2024"
+      tanggal: "Desember 2022 - Agustus 2025"
     },
     className: "big"
   },
@@ -23,7 +23,7 @@ const activitiesData = [
     img: pklImage, // ganti dengan gambar lain
     info: {
       title: "Workshop React.js",
-      desc: "Belajar fundamental React dan Hooks",
+      desc: "Mempelajari fundamental React dan penggunaan Hooks",
       tempat: "Kampus PENS",
       tanggal: "Januari 2025"
     },
@@ -33,8 +33,8 @@ const activitiesData = [
     id: 3,
     img: pklImage,
     info: {
-      title: "Seminar AI",
-      desc: "Mengenal Kecerdasan Buatan untuk Mahasiswa",
+      title: "Seminar Kecerdasan Buatan",
+      desc: "Pengenalan teknologi AI dan penerapannya untuk mahasiswa",
       tempat: "Online",
       tanggal: "Maret 2025"
     },
@@ -44,8 +44,8 @@ const activitiesData = [
     id: 4,
     img: pklImage,
     info: {
-      title: "Himpunan Mahasiswa",
-      desc: "Panitia acara Tech Talk",
+      title: "Kegiatan Himpunan Mahasiswa",
+      desc: "Menjadi panitia acara Tech Talk",
       tempat: "Kampus",
       tanggal: "2024"
     },
@@ -55,8 +55,8 @@ const activitiesData = [
     id: 5,
     img: pklImage,
     info: {
-      title: "Liburan ke Bromo",
-      desc: "Study tour bersama teman-teman",
+      title: "Study Tour ke Bromo",
+      desc: "Perjalanan wisata edukasi bersama teman-teman",
       tempat: "Probolinggo",
       tanggal: "Desember 2024"
     },
@@ -66,8 +66,8 @@ const activitiesData = [
     id: 6,
     img: pklImage,
     info: {
-      title: "Momen Wisuda",
-      desc: "Foto bersama keluarga",
+      title: "Momen Kebersamaan",
+      desc: "Foto bersama keluarga dan teman-teman",
       tempat: "Gedung Serbaguna",
       tanggal: "2025"
     },
@@ -77,9 +77,9 @@ const activitiesData = [
     id: 7,
     img: pklImage,
     info: {
-      title: "Momen Wisuda",
-      desc: "Foto bersama keluarga",
-      tempat: "Gedung Serbaguna",
+      title: "LKMM-TD 2025",
+      desc: "Latihan Keterampilan Manajemen Mahasiswa Tingkat Dasar",
+      tempat: "Kampus",
       tanggal: "2025"
     },
     className: "med"
@@ -119,7 +119,7 @@ const Activity = () => {
         <div className="collage-caption">
           <div>
             <p>
-              <strong>Moments & Memories</strong> Kumpulan momen selama perjalanan
+              <strong>Moments &amp; Memories</strong> Kumpulan momen selama perjalanan
               kuliah, magang, dan eksplorasi
             </p>
           </div>

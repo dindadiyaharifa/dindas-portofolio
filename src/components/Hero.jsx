@@ -11,8 +11,8 @@ const Hero = () => {
             Hi, I'm<span>Dinda</span>
           </h1>
           <p className="hero-desc">
-            D3 Informatics Engineering student. Passionate about computer systems &
-            application development. Hands-on experience in IT Support, and always learning.
+            Mahasiswa D3 Teknik Informatika yang memiliki ketertarikan di bidang pengembangan aplikasi
+            dan sistem komputer. Berpengalaman dalam IT Support, serta selalu antusias untuk terus belajar hal baru.
           </p>
           <div className="hero-tags">
             <span className="tag">IT Support</span>

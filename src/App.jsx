@@ -6,8 +6,7 @@ import Activity from './components/Activity';
 import Certificates from './components/Certificates';
 import Footer from './components/Footer';
 import Experience from './components/Experience';
-// Sementara Experience dinonaktifkan dulu
-// import Experience from './components/Experience';
+
 
 function App() {
   useEffect(() => {

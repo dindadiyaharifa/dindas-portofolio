@@ -1,9 +1,9 @@
 // src/components/CertCard.jsx
 import React from 'react';
 
-const CertCard = ({ icon, accentColor, title, issuer, year, category }) => {
+const CertCard = ({ icon, accentColor, title, issuer, year, category, onClick }) => {
   return (
-    <div className="cert-card reveal">
+    <div className="cert-card reveal" onClick={onClick} style={{ cursor: 'pointer' }}>
       <div className="cert-accent" style={{ background: accentColor || '#F5C800' }}></div>
       <div className="cert-icon">{icon}</div>
       <div className="cert-body">
@@ -14,7 +14,7 @@ const CertCard = ({ icon, accentColor, title, issuer, year, category }) => {
           <span className="cert-cat">{category}</span>
         </div>
       </div>
-      <div className="cert-badge">🏅</div>
+      <div className="cert-badge" title="Klik untuk melihat sertifikat">🏅</div>
     </div>
   );
 };

@@ -1,24 +1,48 @@
 // src/components/Navbar.jsx
-import React from 'react';
+import React, { useState } from 'react';
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <nav>
       <a href="#" className="nav-logo">
         Dinda's Portfolio
       </a>
-      <ul className="nav-links">
+
+      {/* Tombol hamburger */}
+      <div
+        className={`hamburger ${menuOpen ? 'active' : ''}`}
+        onClick={toggleMenu}
+        aria-label="Menu navigasi"
+        aria-expanded={menuOpen}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      {/* Menu navigasi */}
+      <ul className={`nav-links ${menuOpen ? 'show' : ''}`}>
         <li>
-          <a href="#projects">Projects</a>
+          <a href="#projects" onClick={closeMenu}>Projects</a>
         </li>
         <li>
-          <a href="#activity">Activity</a>
+          <a href="#activity" onClick={closeMenu}>Activity</a>
         </li>
         <li>
-          <a href="#experience">Experience</a>
+          <a href="#experience" onClick={closeMenu}>Experience</a>
         </li>
         <li>
-          <a href="#certificates">Sertifikat</a>
+          <a href="#certificates" onClick={closeMenu}>Sertifikat</a>
         </li>
       </ul>
     </nav>
